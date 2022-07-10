@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+:root {
+  --btn-bg: hsl(158, 36%, 37%);
+  --main-bg: hsl(30, 38%, 92%);
+  --card-bg: hsl(0, 0%, 100%);
+  --para: hsl(228, 12%, 48%);
+  --title: hsl(212, 21%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  background: var(--main-bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  background: var(--card-bg);
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  min-height: 460px;
+  width: 580px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.card-container .image-section {
+  height: auto;
+  width: 50%;
+  background: url("./images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-container .content-section {
+  width: 50%;
+  height: auto;
+  padding: 20px 16px 0px 20px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--para);
+}
+.card-container .content-section .product {
+  text-transform: uppercase;
+}
+.card-container .content-section .product-title {
+  color: var(--title);
+  font-family: "Fraunces", serif;
+  font-size: 31px;
+  margin-top: 15px;
+}
+.card-container .content-section .product-descripton {
+  line-height: 24px;
+  margin-top: 20px;
+  width: 25ch;
+  padding-bottom: 30px;
+}
+.card-container .content-section .product-price {
+  display: flex;
+  font-family: "Fraunces", serif;
+  margin-top: 20px;
+  align-items: center;
+}
+.card-container .content-section .product-price .discount {
+  font-size: 30px;
+  margin-right: 40px;
+  color: var(--btn-bg);
+}
+.card-container .content-section .product-price .marketprice {
+  text-decoration: line-through;
+}
+.card-container .content-section .button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card-container .content-section .button-section .buy {
+  background: var(--btn-bg);
+  outline: none;
+  border: none;
+  width: 260px;
+  height: 45px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.card-container .content-section .button-section .buy p {
+  color: var(--card-bg);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.card-container .content-section .button-section .buy:hover {
+  background: hsl(158deg, 80%, 20%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 385px;
+    padding-bottom: 20px;
+  }
+  .card-container .image-section {
+    width: 100%;
+    min-height: 300px;
+    height: 50%;
+    background: url("./images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-container .content-section {
+    width: 100%;
+    height: 50%;
+  }
+  .card-container .content-section .product-title {
+    width: 15ch;
+  }
+  .card-container .content-section .product-descripton {
+    width: 33ch;
+    margin-bottom: 20px;
+  }
+  .card-container .content-section .button-section .buy {
+    width: 320px;
+  }
+}/*# sourceMappingURL=style.css.map */
