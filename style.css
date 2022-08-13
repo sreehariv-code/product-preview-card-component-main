@@ -48,6 +48,7 @@ main {
 }
 .card-container .content-section .product {
   text-transform: uppercase;
+  letter-spacing: 6px;
 }
 .card-container .content-section .product-title {
   color: var(--title);
