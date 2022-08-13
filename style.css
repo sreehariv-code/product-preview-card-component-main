@@ -94,7 +94,7 @@ main {
   justify-content: center;
   gap: 10px;
 }
-.card-container .content-section .button-section .buy p {
+.card-container .content-section .button-section .buy span {
   color: var(--card-bg);
   margin-bottom: 4px;
   font-weight: 600;
